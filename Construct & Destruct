@@ -1,0 +1,23 @@
+<?php 
+class laptop {
+	private $pemilik = "Dandi";
+	private $merk = "Asus";
+
+	public function __construct(){
+		echo "Ini berasal dari Conductor laptop";
+	}
+
+	public function __destruct(){
+		echo "ini berasal dari Destructor laptop";
+	}
+}
+
+$laptop_dandi = new laptop();
+
+echo "<br>";
+
+unset($laptop_dandi);
+
+echo "<br>";
+echo "Objek Telah Dihancurkan";
+?>
